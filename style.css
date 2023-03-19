@@ -26,6 +26,11 @@
   color: var(--tc-main);
 }
 
+li {
+  appearance: none;
+  list-style: none;
+}
+
 body {
   height: 100vh;
 }
