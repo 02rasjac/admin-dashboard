@@ -17,6 +17,7 @@
 
   --tc-main: white;
   --tc-sec: var(--c-50);
+  --tc-dark: var(--bg-main);
 
   --section-pad: 1rem;
 }
@@ -36,6 +37,25 @@ li {
 a {
   appearance: none;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+button.icon {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 0.2em;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  fill: var(--tc-main);
+}
+
+button.icon:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -104,6 +124,33 @@ nav.sidebar li:hover {
 */
 header {
   background-color: var(--bg-sec);
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 2fr;
+  padding: var(--section-pad);
+}
+
+header > div {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+
+header .search {
+  flex: 1;
+}
+
+.search form {
+  display: flex;
+  height: 2rem;
+  gap: 1em;
+}
+
+.search input[type='search'] {
+  width: 80%;
+  border-radius: 1em;
+  color: var(--tc-dark);
+  padding: 0.5rem;
 }
 
 /*
