@@ -58,6 +58,20 @@ button.icon:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+input {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  border: 1px solid var(--c-600);
+}
+
+input:hover {
+  border: 1px solid var(--c-200);
+}
+
 body {
   height: 100vh;
 }
