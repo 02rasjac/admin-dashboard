@@ -6,10 +6,28 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 .title::before {
   content: url('icons/logo.svg');
   display: inline-block;
   width: 1.5em;
   vertical-align: middle;
   margin-right: 0.3em;
+}
+
+.container > * {
+  border: 1px solid red;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.container > nav {
+  grid-row: 1 / -1;
 }
