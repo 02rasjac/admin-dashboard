@@ -1,26 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+:root {
+  --c-50: #faf5ff;
+  --c-100: #f3e8ff;
+  --c-200: #e9d5ff;
+  --c-300: #d8b4fe;
+  --c-400: #c084fc;
+  --c-500: #a855f7;
+  --c-600: #9333ea;
+  --c-700: #7e22ce;
+  --c-800: #6b21a8;
+  --c-900: #581c87;
+
+  --bg-main: rgb(36, 37, 39);
+  --bg-sec: rgb(58, 60, 63);
+
+  --tc-main: white;
+  --tc-sec: var(--c-50);
+
+  --section-pad: 1rem;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  color: var(--tc-main);
+}
+
+li {
+  appearance: none;
+  list-style: none;
+}
+
+a {
+  appearance: none;
+  text-decoration: none;
 }
 
 body {
   height: 100vh;
 }
 
-.title::before {
-  content: url('icons/logo.svg');
-  display: inline-block;
-  width: 1.5em;
-  vertical-align: middle;
-  margin-right: 0.3em;
-}
-
-.container > * {
-  border: 1px solid red;
-}
 .container {
   height: 100%;
   display: grid;
@@ -28,6 +49,68 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
-.container > nav {
+li.has-svg {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+li.has-svg > svg {
+  height: 1.5em;
+  fill: var(--tc-main);
+}
+
+/*
+============================
+------ Sidebar/Navbar ------
+============================
+*/
+nav.sidebar {
   grid-row: 1 / -1;
+
+  background-color: var(--c-800);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: var(--section-pad) 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0 var(--section-pad);
+}
+
+.title > svg {
+  display: inline-block;
+  width: 1.5em;
+  fill: var(--tc-main);
+}
+
+nav.sidebar li {
+  padding: 0.4rem var(--section-pad);
+}
+
+nav.sidebar li:hover {
+  background-color: var(--c-900);
+}
+
+/*
+============================
+---------- Header ----------
+============================
+*/
+header {
+  background-color: var(--bg-sec);
+}
+
+/*
+============================
+----------. Main .----------
+============================
+*/
+main {
+  background-color: var(--bg-main);
 }
