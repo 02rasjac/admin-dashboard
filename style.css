@@ -17,6 +17,8 @@
 
   --tc-main: white;
   --tc-sec: var(--c-50);
+
+  --section-pad: 1rem;
 }
 
 * {
@@ -47,10 +49,6 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
-.container > * {
-  padding: 1rem;
-}
-
 /*
 ============================
 ------ Sidebar/Navbar ------
@@ -64,18 +62,29 @@ nav.sidebar {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  padding: var(--section-pad) 0;
 }
 
 .title {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  padding: 0 var(--section-pad);
 }
 
 .title > svg {
   display: inline-block;
   width: 1.5em;
   fill: var(--tc-main);
+}
+
+nav.sidebar li {
+  padding: 0.4rem var(--section-pad);
+}
+
+nav.sidebar li:hover {
+  background-color: var(--c-900);
 }
 
 /*
