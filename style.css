@@ -49,6 +49,16 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
+li.has-svg {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+li.has-svg > svg {
+  height: 1.5em;
+  fill: var(--tc-main);
+}
+
 /*
 ============================
 ------ Sidebar/Navbar ------
