@@ -37,8 +37,8 @@ body {
   grid-template-rows: 1fr 4fr;
 }
 
-.container > nav {
-  grid-row: 1 / -1;
+.container > * {
+  padding: 1rem;
 }
 
 /*
@@ -47,7 +47,13 @@ body {
 ============================
 */
 nav.sidebar {
+  grid-row: 1 / -1;
+
   background-color: var(--c-800);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .title::before {
