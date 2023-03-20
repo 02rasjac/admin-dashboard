@@ -152,7 +152,7 @@ header > div {
 }
 
 header .search {
-  flex: 1;
+  flex: 3;
 }
 
 .search form {
@@ -166,6 +166,28 @@ header .search {
   border-radius: 1em;
   color: var(--tc-dark);
   padding: 0.5rem;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+#user .icon {
+  height: 2.5em;
+}
+
+#user p {
+  width: fit-content;
+  font-weight: bold;
+}
+
+.profile-pic {
+  height: 3em;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
 }
 
 /*
