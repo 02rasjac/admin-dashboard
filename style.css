@@ -19,7 +19,7 @@
   --tc-sec: var(--c-50);
   --tc-dark: var(--bg-main);
 
-  --section-pad: 1rem;
+  --section-pad: 2rem;
 }
 
 * {
@@ -125,7 +125,7 @@ nav.sidebar {
   flex-direction: column;
   gap: 2rem;
 
-  padding: var(--section-pad) 0;
+  padding: calc(var(--section-pad) * 0.5) 0;
 }
 
 .title {
@@ -160,7 +160,7 @@ header {
   grid-template-columns: 1;
   grid-template-rows: 1fr auto;
   gap: 1rem;
-  padding: var(--section-pad);
+  padding: calc(var(--section-pad) * 0.5) var(--section-pad);
 }
 
 header > div {
