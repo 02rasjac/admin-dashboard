@@ -174,8 +174,9 @@ header .search {
 #user {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   flex: 1;
+  gap: 1.5rem;
 }
 
 #user .icon {
