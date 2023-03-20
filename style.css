@@ -194,6 +194,28 @@ header .search {
   aspect-ratio: 1 / 1;
 }
 
+#user-msg {
+  display: flex;
+  gap: 1em;
+  height: 4rem;
+}
+
+#user-msg .profile-pic {
+  height: 100%;
+}
+
+#user-msg div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 3.5rem;
+  align-self: center;
+}
+
+#user-msg p:last-child {
+  font-size: 1.5rem;
+}
+
 /*
 ============================
 ----------. Main .----------
