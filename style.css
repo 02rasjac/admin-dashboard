@@ -98,7 +98,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 5rem auto 1fr;
 }
 
 li.has-svg {
@@ -156,6 +156,8 @@ nav.sidebar li:hover {
 */
 header {
   background-color: var(--bg-sec);
+  grid-column: 2 / -1;
+  grid-row: 1 / 3;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1fr auto;
