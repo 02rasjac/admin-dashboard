@@ -219,6 +219,7 @@ header .search {
 
 header .bottom {
   height: 4rem;
+  justify-content: space-between;
 }
 
 #user-msg .profile-pic {
@@ -235,6 +236,12 @@ header .bottom {
 
 #user-msg p:last-child {
   font-size: 1.5rem;
+}
+
+#user-actions {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 /*
