@@ -81,7 +81,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 10rem auto;
+  grid-template-rows: auto 1fr;
 }
 
 li.has-svg {
@@ -141,7 +141,8 @@ header {
   background-color: var(--bg-sec);
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
   padding: var(--section-pad);
 }
 
@@ -201,7 +202,6 @@ header .search {
 
 header .bottom {
   height: 4rem;
-  align-self: self-end;
 }
 
 #user-msg .profile-pic {
