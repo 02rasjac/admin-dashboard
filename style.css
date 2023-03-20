@@ -126,7 +126,7 @@ li.has-svg > svg {
 ============================
 */
 nav.sidebar {
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
 
   background-color: var(--c-800);
 
@@ -138,6 +138,9 @@ nav.sidebar {
 }
 
 .title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: var(--c-800);
   display: flex;
   align-items: center;
   gap: 0.3rem;
