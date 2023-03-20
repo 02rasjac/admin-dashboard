@@ -81,7 +81,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 10rem auto;
 }
 
 li.has-svg {
@@ -197,7 +197,11 @@ header .search {
 #user-msg {
   display: flex;
   gap: 1em;
+}
+
+header .bottom {
   height: 4rem;
+  align-self: self-end;
 }
 
 #user-msg .profile-pic {
