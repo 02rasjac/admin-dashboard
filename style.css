@@ -153,19 +153,22 @@ header > div {
 
 header .search {
   flex: 3;
+  align-self: center;
 }
 
 .search form {
   display: flex;
   height: 2rem;
   gap: 1em;
+  align-items: center;
 }
 
 .search input[type='search'] {
-  width: 80%;
+  flex: 1;
   border-radius: 1em;
   color: var(--tc-dark);
   padding: 0.5rem;
+  margin-right: 1rem;
 }
 
 #user {
