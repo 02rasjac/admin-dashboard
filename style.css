@@ -300,3 +300,7 @@ header .search {
   font-size: 0.9rem;
   margin-top: 0.3rem;
 }
+
+.card .actions {
+  height: 2rem;
+}
