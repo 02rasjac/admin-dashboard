@@ -302,12 +302,14 @@ header .search {
 .card .description {
   font-weight: 400;
   font-size: 0.9rem;
-  margin-top: 0.3rem;
+  margin: 0.3rem 0;
   flex: 1;
+  overflow-y: hidden;
 }
 
 .card .actions {
   height: 2rem;
+  flex: 0 0 auto;
   display: flex;
   justify-content: end;
   gap: 1rem;
