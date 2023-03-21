@@ -266,6 +266,12 @@ header .search {
 ----------. Main .----------
 ============================
 */
-main {
+.main {
   background-color: var(--bg-main);
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.main main {
+  grid-row: 1 / -1;
 }
