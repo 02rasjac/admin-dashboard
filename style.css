@@ -31,6 +31,11 @@ Acronyms:
   --section-pad-tb: 1rem;
 }
 
+/*
+==============================
+---------- Defaults ----------
+==============================
+*/
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -55,6 +60,17 @@ button {
   outline: none;
 }
 
+input {
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+/*
+===============================
+----------- Buttons -----------
+===============================
+*/
 button.icon {
   height: 100%;
   aspect-ratio: 1 / 1;
@@ -85,12 +101,11 @@ button.main:active {
   box-shadow: inset 3px 4px 7px -4px rgba(0, 0, 0, 0.33);
 }
 
-input {
-  appearance: none;
-  outline: none;
-  border: none;
-}
-
+/*
+=============================
+----------- Input --_--------
+=============================
+*/
 input:hover {
   outline: 1px solid var(--c-200);
 }
@@ -99,6 +114,11 @@ input:focus {
   outline: 2px solid var(--c-600);
 }
 
+/*
+==============================
+----- Scroll-effects/bar -----
+==============================
+*/
 .simplebar-scrollbar::before {
   background-color: var(--c-700);
   width: 5px;
@@ -119,6 +139,11 @@ body {
   grid-template-rows: 5rem auto 1fr;
 }
 
+/*
+==============================
+------ Lists with icons ------
+==============================
+*/
 li.has-svg {
   display: flex;
   align-items: center;
