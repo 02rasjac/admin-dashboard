@@ -99,6 +99,15 @@ input:focus {
   outline: 2px solid var(--c-600);
 }
 
+.simplebar-scrollbar::before {
+  background-color: var(--c-700);
+  width: 5px;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 0.6;
+}
+
 body {
   height: 100vh;
 }
@@ -302,9 +311,10 @@ header .search {
 .card .description {
   font-weight: 400;
   font-size: 0.9rem;
+  height: 100%;
   margin: 0.3rem 0;
   flex: 1;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .card .actions {
