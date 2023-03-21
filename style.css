@@ -308,6 +308,10 @@ header .search {
   gap: 1rem;
 }
 
+.main h2 {
+  margin-bottom: 1rem;
+}
+
 .main main {
   grid-row: 1 / -1;
 }
