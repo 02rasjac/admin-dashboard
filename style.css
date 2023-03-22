@@ -132,7 +132,7 @@ body {
   height: 100vh;
 }
 
-.container {
+body > .container {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr;
