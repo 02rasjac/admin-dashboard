@@ -84,19 +84,19 @@ button.icon:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-button.main {
+.btn-main {
   background-color: var(--c-800);
   min-width: 5rem;
   padding: 0.5rem;
   border-radius: 1em;
 }
 
-button.main:hover {
+.btn-main:hover {
   -webkit-box-shadow: 3px 4px 7px -4px rgba(0, 0, 0, 0.33);
   box-shadow: 3px 4px 7px -4px rgba(0, 0, 0, 0.33);
 }
 
-button.main:active {
+.btn-main:active {
   -webkit-box-shadow: inset 3px 4px 7px -4px rgba(0, 0, 0, 0.33);
   box-shadow: inset 3px 4px 7px -4px rgba(0, 0, 0, 0.33);
 }
