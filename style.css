@@ -406,3 +406,11 @@ header .search {
   grid-row: 1 / -1;
   height: 100%;
 }
+
+#trending .user-tag {
+  font-size: 103%;
+}
+
+#trending .user-title {
+  font-weight: 300;
+}
