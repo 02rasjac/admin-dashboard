@@ -395,3 +395,14 @@ header .search {
 .main .container article {
   font-size: 85%;
 }
+
+#trending article {
+  display: grid;
+  grid-template: 1rem 1rem / 2rem auto;
+  column-gap: 0.5rem;
+}
+
+#trending .profile-pic {
+  grid-row: 1 / -1;
+  height: 100%;
+}
