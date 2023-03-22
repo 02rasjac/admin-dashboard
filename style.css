@@ -400,6 +400,7 @@ header .search {
   display: grid;
   grid-template: 1rem 1rem / 2rem auto;
   column-gap: 0.5rem;
+  border: none;
 }
 
 #trending .profile-pic {
