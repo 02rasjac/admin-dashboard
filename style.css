@@ -362,3 +362,18 @@ header .search {
   justify-content: end;
   gap: 1rem;
 }
+
+.main .container {
+  display: grid;
+  padding: 0 var(--section-pad-tb);
+  background-color: var(--bg-sec);
+  border-radius: 0.5rem;
+}
+
+.main .container article {
+  padding: var(--section-pad-tb) 0;
+}
+
+.main .container article:not(:first-child) {
+  border-top: 1px solid var(--c-400);
+}
