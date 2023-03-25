@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "simplebar": "^6.2.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   }
 }
